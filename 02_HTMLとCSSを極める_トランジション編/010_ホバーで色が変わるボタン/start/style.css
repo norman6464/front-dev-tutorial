@@ -1,18 +1,24 @@
-.btn {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-  padding: 10px 40px;
-  margin: 50px 0;
-  font-weight: 600;
-  cursor: pointer;
-}
-
 #container {
   text-align: center;
 }
 
-/* ホバー時 */
-.btn:hover {
-  
+.btn {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px 40px;
+  margin: 50px 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
 }
+.btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.btn-cube {
+  background-color: rgb(0, 0, 0);
+}
+.btn-cube .inner {
+  background-color: rgb(0, 0, 0);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,31 @@
+.parent {
+  color: blue;
+  
+  & > .element {
+    color: purple;
+    
+    &.second-child {
+      color: black;
+    }
+    
+  }
+  
+}
+
+// > は親要素から見て一回層下がった子要素のみの適用になるので
+// 孫要素の適用がされない
+// だからelementの孫要素は赤色になる
+
+.element {
+  color: red;
+}
+
+.second-child {
+  color: black;
+}
+
+// .child {
+//   color: purple;
+// }
+
+
